@@ -18,12 +18,6 @@ class ProductFeaturedDetailView(DetailView):
 	queryset = Product.objects.all().featured()
 	template_name = "products/featured-detail.html"
 
-	# def get_queryset(self, *args, **kwargs):
-	# 	request  = self.request
-	# 	return Product.objects.featured()
-
-
-
 class ProductListView(ListView):
 	template_name = "products/list.html"
 
